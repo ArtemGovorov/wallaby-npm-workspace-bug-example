@@ -14,4 +14,8 @@ module.exports = (wallaby) => ({
             module: 'commonjs',
         })
     },
+    testFramework: {
+        type: 'mocha',
+        path: require('path').join(__dirname, '../../node_modules/mocha')
+    },
 })
